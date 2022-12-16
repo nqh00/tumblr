@@ -1,0 +1,56 @@
+<html>
+	<style>
+		.circles__text {
+			text-transform: uppercase;
+			transform-origin: 500px 500px;
+			will-change: transform, opacity;
+		}
+
+		.circles__text--1 {
+			font-size: clamp(60px,20vmin,60px);
+		}
+
+		.circles__text--2 {
+			font-size: clamp(40px,15vmin,55px);
+		}
+
+		.circles__text--3 {
+			font-size: clamp(40px,15vmin,45px);
+		}
+
+		.circles__text--4 {
+			font-size: clamp(30px,15vmin,35px);
+
+		}
+
+		.circles__text--5 {
+			font-size: clamp(30px,15vmin,30px);
+		}
+	</style>
+	<body>
+		<svg class="circles" width="100%" height="100%" viewBox="0 0 1400 1400">
+			<def>
+				<path id="circle-1" d="M250,700.5A450.5,450.5 0 1 1 1400,700.5A450.5,450.5 0 1 1 250,700.5" />
+				<path id="circle-2" d="M360,700.5A310.5,310.5 0 1 1 1280,700.5A310.5,310.5 0 1 1 360,700.5" />
+				<path id="circle-3" d="M470,700.5A210.5,210.5 0 1 1 1150,700.5A210.5,210.5 0 1 1 470,700.5" />
+				<path id="circle-4" d="M570,700.5A133,133 0 1 1 1053.5,700.5A133,133 0 1 1 570,700.5" />
+        <path id="circle-5" d="M660,700.5A97,97 0 1 1 983.5,700.5A97,97 0 1 1 660,700.5" />
+			</def>
+			<text class="circles__text circles__text--1">
+				<textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="3620">chẳng khác Sắc–Sắc tức là Không–Không tức là Sắc–Sắc chẳng khác Không–Không &nbsp;</textPath>
+			</text>
+			<text class="circles__text circles__text--2">
+				<textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="2890">chẳng khác Thọ–Thọ tức là Không–Không tức là Thọ–Thọ chẳng khác Không–Không &nbsp;</textPath>
+			</text>
+			<text class="circles__text circles__text--3">
+				<textPath class="circles__text-path" xlink:href="#circle-3" aria-label="" textLength="2130">chẳng khác Tưởng–Tưởng tức là Không–Không tức là Tưởng–Tưởng chẳng khác Không–Không &nbsp;</textPath>
+			</text>
+			<text class="circles__text circles__text--4">
+				<textPath class="circles__text-path" xlink:href="#circle-4" aria-label="" textLength="1520">chẳng khác Hành–Hành tức là Không–Không tức là Hành–Hành chẳng khác Không–Không &nbsp;</textPath>
+			</text>
+      <text class="circles__text circles__text--5">
+				<textPath class="circles__text-path" xlink:href="#circle-5" aria-label="" textLength="1020">chẳng khác Thức–Thức tức là Không–Không tức là Thức–Thức chẳng khác Không–Không &nbsp;</textPath>
+			</text>
+		</svg>
+	</body>
+</html>
