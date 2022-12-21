@@ -3,10 +3,10 @@
               description = document.querySelector('.description');
               lang.addEventListener('click', function() {
                 description.innerHTML == 'the aesthetic - the ethical - the religious' ? description.innerHTML = 'thẩm mỹ - đạo đức - tôn giáo' : description.innerHTML = 'the aesthetic - the ethical - the religious';
-                document.querySelectorAll('p[lang="en"]').forEach(element => {
+                document.querySelectorAll('[lang="en"]').forEach(element => {
                   element.style.display == 'block' ? element.style.display = 'none' : element.style.display = 'block';
                 });
-                document.querySelectorAll('p[lang="vi"]').forEach(element => {
+                document.querySelectorAll('[lang="vi"]').forEach(element => {
                   element.style.display == 'none' ? element.style.display = 'block' : element.style.display = 'none';
                 });
               });
