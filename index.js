@@ -1,6 +1,10 @@
             document.addEventListener('DOMContentLoaded', function() {
-              lang = document.querySelector('.lang');
-              description = document.querySelector('.description');
+              const lang = document.querySelector('.lang');
+              const next = document.querySelector('.next');
+              const previous = document.querySelector('.previous');
+              const description = document.querySelector('.description');
+              const hide = '-2.5rem';
+              const show = '0.5rem';
               lang.addEventListener('click', function() {
                 description.innerHTML == 'the aesthetic - the ethical - the religious' ? description.innerHTML = 'thẩm mỹ - đạo đức - tôn giáo' : description.innerHTML = 'the aesthetic - the ethical - the religious';
                 document.querySelectorAll('[lang="en"]').forEach(element => {
@@ -25,9 +29,25 @@
                 const dely = touchendY - touchstartY;
                 if (Math.abs(delx) < Math.abs(dely)) {
                   if (dely < 0) {
-                    lang.style.right = '-2.5rem';
+                    lang.style.right = hide;
+                    if (next == null) {
+                      previous.style.left = hide;
+                    } else if (previous == null) {
+                      next.style.right = hide;
+                    } else {
+                      next.style.right = hide;
+                      previous.style.left = hide;
+                    }
                   } else {
-                    lang.style.right = '0.5rem';
+                    lang.style.right = show;
+                    if (next == null) {
+                      previous.style = show;
+                    } else if (previous == null) {
+                      next.style = show;
+                    } else {
+                      next.style.right = show;
+                      previous.style.left = show;
+                    }
                   }
                 }
               }, false);
