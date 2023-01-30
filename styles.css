@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 =======
+h1, p, .description  {
+    font-family: 'Inter', sans-serif;
+}
 .lang {
     position: fixed;
     transform: scale(0.5);
